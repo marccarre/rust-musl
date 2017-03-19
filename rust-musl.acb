@@ -1,0 +1,7 @@
+#!/usr/bin/env acbuild-script
+begin
+set-name marccarre/rust-musl
+copy ./dist ./dist
+set-exec -- /bin/sh -c "/bin/sh"
+write --overwrite rust-musl.aci
+end
